@@ -15,32 +15,32 @@ if exists('syntax on')
 	  syntax reset
 endif
 
-let g:colors_name='hos-wal'
+let g:colors_name='vim-wal'
 let s:background = &background
 
 " color handler {{{
 
 if filereadable(expand("~/.cache/wal/colors-wal.vim"))    
 	source ~/.cache/wal/colors-wal.vim
-	let s:wal_background = { "gui": g:wal_background , "cterm": "black"  }
-	let s:wal_foreground = { "gui": g:wal_foreground , "cterm": "white" }
+	let s:wal_background = { "gui": background , "cterm": "black"  }
+	let s:wal_foreground = { "gui": foreground , "cterm": "white" }
 
-	let s:wal_color0     = { "gui": g:wal_color0     , "cterm": "0"   }
-	let s:wal_color1     = { "gui": g:wal_color1     , "cterm": "1"   }
-	let s:wal_color2     = { "gui": g:wal_color2     , "cterm": "2"   }
-	let s:wal_color3     = { "gui": g:wal_color3     , "cterm": "3"   }
-	let s:wal_color4     = { "gui": g:wal_color4     , "cterm": "4"   }
-	let s:wal_color5     = { "gui": g:wal_color5     , "cterm": "5"   }
-	let s:wal_color6     = { "gui": g:wal_color6     , "cterm": "6"   }
-	let s:wal_color7     = { "gui": g:wal_color7     , "cterm": "7"   }
-	let s:wal_color8     = { "gui": g:wal_color8     , "cterm": "8"   }
-	let s:wal_color9     = { "gui": g:wal_color9     , "cterm": "9"   }
-	let s:wal_color10    = { "gui": g:wal_color10    , "cterm": "10"  }
-	let s:wal_color11    = { "gui": g:wal_color11    , "cterm": "11"  }
-	let s:wal_color12    = { "gui": g:wal_color12    , "cterm": "12"  }
-	let s:wal_color13    = { "gui": g:wal_color13    , "cterm": "13"  }
-	let s:wal_color14    = { "gui": g:wal_color14    , "cterm": "14"  }
-	let s:wal_color15    = { "gui": g:wal_color15    , "cterm": "15"  }
+	let s:wal_color0     = { "gui": color0     , "cterm": "0"   }
+	let s:wal_color1     = { "gui": color1     , "cterm": "1"   }
+	let s:wal_color2     = { "gui": color2     , "cterm": "2"   }
+	let s:wal_color3     = { "gui": color3     , "cterm": "3"   }
+	let s:wal_color4     = { "gui": color4     , "cterm": "4"   }
+	let s:wal_color5     = { "gui": color5     , "cterm": "5"   }
+	let s:wal_color6     = { "gui": color6     , "cterm": "6"   }
+	let s:wal_color7     = { "gui": color7     , "cterm": "7"   }
+	let s:wal_color8     = { "gui": color8     , "cterm": "8"   }
+	let s:wal_color9     = { "gui": color9     , "cterm": "9"   }
+	let s:wal_color10    = { "gui": color10    , "cterm": "10"  }
+	let s:wal_color11    = { "gui": color11    , "cterm": "11"  }
+	let s:wal_color12    = { "gui": color12    , "cterm": "12"  }
+	let s:wal_color13    = { "gui": color13    , "cterm": "13"  }
+	let s:wal_color14    = { "gui": color14    , "cterm": "14"  }
+	let s:wal_color15    = { "gui": color15    , "cterm": "15"  }
 else
 	let s:wal_background    = { "gui": "#000000", "cterm": "232"  }
 	let s:wal_foreground    = { "gui": "#ffffff", "cterm": "231"  }
